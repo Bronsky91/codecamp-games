@@ -8,11 +8,11 @@ const GameSelection = props => (
     <ul>
         <h3>Choose a Game to Play</h3>
         <li>
-            Simon Says
+            <Link to='/simon'>Simon Says</Link>
         </li>
 
         <li>
-            Tic Tac Toe
+            <Link to='/tic-tac-toe'>Tic Tac Toe</Link>
         </li>
     </ul>
     <Link to='/signup'>Sign up to save scores</Link>

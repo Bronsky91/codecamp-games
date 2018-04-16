@@ -3,8 +3,9 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 const TicTacToe = props => (
-  <div>
-</div>
+    <div>
+        Tic Tac Toe Placeholder
+    </div>
 
 )
 

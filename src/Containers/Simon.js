@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 const Simon = props => (
   <div>
+    Simon Says Placeholder
 </div>
 
 )
