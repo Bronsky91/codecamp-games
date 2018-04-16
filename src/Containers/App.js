@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import SignUp from './SignUp'
 import GameSelection from './GameSelection'
-import TicTacToe from './TicTacToe'
+import TicTacToeBoard from './TicTacToeBoard'
 import Simon from './Simon'
 import '../App.css';
 
@@ -14,7 +14,7 @@ const App = props => (
     <div>
       <Route exact path='/' component={GameSelection} />
       <Route path='/signup' component={SignUp}/>
-      <Route path='/tic-tac-toe' component={TicTacToe}/>
+      <Route path='/tic-tac-toe' component={TicTacToeBoard}/>
       <Route path='/simon' component={Simon}/>
     </div>
     </Router>

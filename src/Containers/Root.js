@@ -6,11 +6,15 @@ import App from './App';
 import thunk from 'redux-thunk';
 import { reducer as formReducer } from 'redux-form';
 import authReducer from '../Reducers/authReducer'
+import tactoeReducer from '../Reducers/tactoeReducer'
+import simonReducer from '../Reducers/simonReducer'
 // Add reducers from Reducer folder
 
 const rootReducer = combineReducers({
     form: formReducer,
-    auth: authReducer,
+    authReducer,
+    tactoeReducer,
+    simonReducer,
     // Add reducers from Reducer folder
 })
 
