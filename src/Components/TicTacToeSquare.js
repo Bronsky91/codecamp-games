@@ -7,8 +7,8 @@ import { getPlayer } from '../Reducers/tactoeReducer'
 class TicTacToeSquare extends Component {
     render = () => {
         return (
-            <button className='tsquare' onClick={()=> this.props.playerMove(this.props.index, this.props.player)}>
-                {this.props.squareValue}
+            <button className='tsquare' onClick={()=> this.props.squareValue == null ? this.props.playerMove(this.props.index, this.props.player) : null}>
+                <div className='squareValue'>{this.props.squareValue}</div> 
             </button>
             )
     } 
@@ -16,8 +16,8 @@ class TicTacToeSquare extends Component {
    
 
 TicTacToeSquare.propTypes = {
-    player: PropTypes.func,
-    playerMove: PropTypes.object
+    player: PropTypes.string,
+    playerMove: PropTypes.func
 }
 
 const mapStateToProps = state => ({

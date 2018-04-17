@@ -32,3 +32,9 @@
     margin: auto;
     width: 100px;
 }
+.choiceButton:hover {
+    cursor: pointer;
+}
+.squareValue {
+    font-size: 4em;
+}

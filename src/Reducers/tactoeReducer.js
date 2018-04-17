@@ -1,6 +1,6 @@
 const initialState = {
-    value: null,
     player: null,
+    computer: null,
     board: {
         0: null, 1: null, 2: null,
         3: null, 4: null, 5: null,
@@ -13,7 +13,12 @@ export default (state = initialState, action) => {
         case 'X_OR_O':
             return {
                 ...state,
-                player: action.player
+                player: action.player,
+                computer: action.player === 'X' ? 
+                    'O' : 
+                    action.player === 'O' ?
+                    'X' : 
+                    null
             }
         case 'PLAYER_MOVE':
             return {
@@ -28,6 +33,5 @@ export default (state = initialState, action) => {
     }
 }
 
-export const getValue = state => state.tactoeReducer.value;
 export const getPlayer = state => state.tactoeReducer.player;
 export const currentBoard = state => state.tactoeReducer.board;
